@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Yelp Camp - Campground</title>
+</head>
+<body>
+    
+    <nav id="navbar">
+        <div class="container">
+            <div class="navbar-left">
+                <div class="navbar-logo">
+                    <img src="assets/img/Logo.svg" alt="logo">
+                </div>
+                <a href="/index.html" class="navbar-link">Home</a>
+            </div>
+            <div class="navbar-hamburger">
+                <button id="open-btn"><img src="assets/img/Hamburger Menu.svg" alt="Open"></button>
+                <button id="close-btn"><img src="assets/img/Close.svg" alt="Close"></button>
+            </div>
+            <div class="navbar-right">
+                <a href="sign-in.html" class="navbar-btn">Login</a>
+                <a href="sign-up.html" class="navbar-btn btn">Create an Account</a>
+            </div>
+        </div>
+        <div class="navbar-dropdown">
+            <div class="container">
+                <a href="sign-in.html" class="navbar-btn">Login</a>
+                <a href="sign-up.html" class="navbar-btn btn">Create an Account</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="search">
+        <div class="container">
+            <h1 class="search-title">Welcome to YelpCamp!</h1>
+            <p class="search-description">
+                View our hand-picked campgrounds from all over the world, or add your own.
+            </p>
+            <div class="search-box">
+                <div class="search-input">
+                    <img src="assets/img/Search Icon.svg" alt="search">
+                    <input type="text" id="search" placeholder="Search for camps">
+                </div>
+                <button class="search-btn btn">Search</button>
+            </div>
+            <a href="add-campground.html" class="search-link">
+                Or add your own campground
+            </a>
+        </div>
+    </section>
+
+    <section id="campground">
+        <div class="container">
+            <div class="campground-card">
+                <img src="assets/img/compressed/Mount Ulap.jpg" alt="Mount Ulap" class="campground-img">
+                <h3 class="campground-title">Mount Ulap</h3>
+                <p class="campground-description">One of the famous hikes in Benguet is Mt Ulap in Itogon.</p>
+                <a href="campground-details.html" class="campground-btn btn btn-outline">View Campground</a>
+            </div>
+            <div class="campground-card">
+                <img src="assets/img/compressed/Calaguas Island.jpg" alt="Calaguas Islands" class="campground-img">
+                <h3 class="campground-title">Calaguas Islands</h3>
+                <p class="campground-description">A paradise of islands that can rival the white sand beauty of Boracay.</p>
+                <a href="#" class="campground-btn btn btn-outline">View Campground</a>
+            </div>
+            <div class="campground-card">
+                <img src="assets/img/compressed/Onay Beach.jpg" alt="Onay Beach" class="campground-img">
+                <h3 class="campground-title">Onay Beach</h3>
+                <p class="campground-description">This is one of the best beach camping sites, beautiful and pristine.</p>
+                <a href="#" class="campground-btn btn btn-outline">View Campground</a>
+            </div>
+            <div class="campground-card">
+                <img src="assets/img/compressed/Seven Sisters Waterfall.jpg" alt="Seven Sisters Waterfall" class="campground-img">
+                <h3 class="campground-title">Seven Sisters Waterfall</h3>
+                <p class="campground-description">The Seven Sisters is the 39th tallest waterfall in Norway.</p>
+                <a href="#" class="campground-btn btn btn-outline">View Campground</a>
+            </div>
+            <div class="campground-card">
+                <img src="assets/img/compressed/Latik Riverside.jpg" alt="Latik Riverside" class="campground-img">
+                <h3 class="campground-title">Latik Riverside</h3>
+                <p class="campground-description">Phillipines is one of the most dazzling countries in all of Asia.</p>
+                <a href="#" class="campground-btn btn btn-outline">View Campground</a>
+            </div>
+            <div class="campground-card">
+                <img src="assets/img/compressed/Buloy Springs.jpg" alt="Buloy Springs" class="campground-img">
+                <h3 class="campground-title">Buloy Springs</h3>
+                <p class="campground-description">This is one of the best beach camping sites, beautiful and pristine.</p>
+                <a href="#" class="campground-btn btn btn-outline">View Campground</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="navbar-logo">
+                <img src="assets/img/Logo.svg" alt="logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #010000;
+    --secondary-color: #F9F6F1;
+    --text-color: #605D58;
+    --primary-font: 'Fira Sans', sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-outline {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #C9CAC5;
+    font-weight: 700;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    z-index: 100;
+}
+
+#navbar .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .navbar-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar .navbar-left a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#navbar .navbar-left a:hover,
+#navbar .navbar-right a:first-child:hover,
+#navbar .navbar-dropdown a:first-child:hover,
+#navbar .navbar-left a:active {
+    color: var(--primary-color);
+}
+
+#navbar .navbar-right a:first-child,
+#navbar .navbar-dropdown a:first-child {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 20px;
+}
+
+#navbar .navbar-hamburger {
+    display: none;
+}
+
+#navbar .navbar-dropdown {
+    display: none;
+}
+
+#navbar .back-btn,
+#navbar .logout-btn {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#navbar .back-btn:hover {
+    color: #000;
+}
+
+#navbar .user-btn {
+    font-weight: bold;
+}
+
+#showcase {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#showcase .container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#showcase .left-showcase {
+    width: 50%;
+}
+
+#showcase .left-showcase .showcase-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+#showcase .left-showcase .showcase-subtitle {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 15px 0;
+    line-height: 1.5;
+    padding-right: 30px;
+}
+
+#showcase .left-showcase .showcase-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#showcase .left-showcase .showcase-list li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#showcase .left-showcase .showcase-list li p {
+    font-size: 1rem;
+    margin-left: 10px;
+    color: var(--text-color);
+}
+
+#showcase .left-showcase .showcase-btn {
+    margin-bottom: 20px;
+}
+
+#showcase .left-showcase .showcase-btn:hover {
+    transform: scale(0.98);
+}
+
+#showcase .left-showcase .showcase-btn + p {
+    margin: 10px 0;
+    color: var(--text-color);
+    font-family: var(--primary-font);
+}
+
+#showcase .right-showcase {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: url('assets/img/Hero\ Image.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#search {
+    margin-top: 100px;
+    height: 350px;
+}
+
+#search .container {
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--secondary-color);
+}
+
+#search .search-title {
+    font-size: 2.5rem;
+}
+
+#search .search-description {
+    color: var(--text-color);
+    margin: 10px 0;
+    width: 38%;
+    line-height: 1.5;
+}
+
+#search .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search .search-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #C9CAC5;
+    padding: 10px 0 10px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 15px 15px 15px 0;
+}
+
+#search .search-input input {
+    height: 10px;
+    padding: 15px 10px;
+    width: 200px;
+    margin: auto 0;
+    border: none;
+    font-size: 1rem;
+}
+
+#search .search-input input::placeholder {
+    font-size: 1rem;
+    font-family: var(--primary-font);
+}
+
+#search .search-input input:focus {
+    outline: none;
+}
+
+#search .search-link {
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+#campground {
+    margin: 100px 0;
+    height: auto;
+}
+
+#campground .container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#campground .campground-card {
+    padding: 10px;
+    border: 1px solid #C9CAC5;
+    border-radius: 5px;
+}
+
+#campground .campground-card .campground-img {
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#campground .campground-card .campground-title {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+#campground .campground-card .campground-description {
+    font-size: .9rem;
+    margin: 5px 0;
+    color: var(--text-color);
+    line-height: 1.4;
+}
+
+#campground .campground-card .campground-btn {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 0;
+    transition: all .3s ease;
+}
+
+#campground .campground-card .campground-btn:hover {
+    transform: scale(.98);
+    background-color: #010000;
+    color: #fff;
+}
+
+#campground-details {
+    margin: 100px 0;
+    height: auto;
+    padding: 20px 0;
+}
+
+#campground-details .campground-grid {
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+    gap: 30px;
+}
+
+#campground-details .campground-left {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#campground-details .campground-item,
+#campground-details .campground-comments {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+#campground-details .campground-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#campground-details .campground-item > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#campground-details .campground-item > div p {
+    font-weight: 600;
+}
+
+#campground-details .campground-item .campground-item-description {
+    margin: 10px 0;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+#campground-details .campground-item .campground-item-author {
+    margin: 10px 0 0;
+    font-style: italic;
+    color: var(--text-color);
+}
+
+#campground-details .campground-comments {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+#campground-details .campground-comments a:last-child {
+    align-self: flex-end;
+}
+
+#campground-details .campground-comment {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+
+#campground-details .campground-comment > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#campground-details .campground-comment > div .comment-user {
+    font-weight: bold;
+}
+
+#campground-details .campground-comment > div .comment-date {
+    color: var(--text-color);
+}
+
+#campground-details .campground-comment .comment-content {
+    margin: 10px 0;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+#campground-details .comment-btn {
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+#signin {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#signin .container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    justify-content: center;
+    align-items: center;
+}
+
+#signin .signin-left {
+    padding: 0 180px 0 0;
+}
+
+#signin .signin-left .signin-title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+#signin .signin-left form {
+    margin: 20px 0;
+}
+
+#signin .signin-left form .form-group {
+    margin: 20px 0;
+}
+
+#signin .signin-left .form-group label {
+    display: block;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+#signin .signin-left .form-group input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #F7F7F7;
+    color: var(--text-color);
+}
+
+#signin .signin-left .form-group input:focus {
+    outline: none;
+}
+
+#signin .signin-left .form-group input::placeholder {
+    color: var(--text-color);
+}
+
+#signin .signin-left form button {
+    display: block;
+    width: 100%;
+}
+
+#signin .signin-left .signup {
+    color: var(--text-color);
+}
+
+#signin .signin-left .signup a {
+    color: #339FCE;
+    font-weight: bold;
+}
+
+#signin .signin-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 160px;
+    background-color: #F9F6F1;
+}
+
+#signin .signin-right .user-testimonials {
+    line-height: 1.5;
+}
+
+#signin .signin-right .user-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#signin .signin-right .user-content img {
+    margin-right: 15px;
+}
+
+#signin .signin-right .user-content .user-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#signin .signin-right .user-content .user-jobs {
+    color: var(--text-color);
+}
+
+#add-campground {
+    height: auto;
+    width: 100%;
+    margin: 100px 0 70px;
+}
+
+#add-campground .container,
+#add-campground-comment .container {
+    height: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#add-campground .add-campground-title,
+#add-campground-comment .add-campground-comment-title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+#add-campground form,
+#add-campground-comment form {
+    margin: 20px 0;
+    width: 100%;
+}
+
+#add-campground form .form-group,
+#add-campground-comment form .form-group {
+    margin: 20px 0;
+    width: 100%;
+}
+
+#add-campground form label,
+#add-campground-comment form label {
+    display: block;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+#add-campground form .form-group input,
+#add-campground form .form-group textarea,
+#add-campground-comment form .form-group textarea {
+    display: block;
+    width: 100%;
+}
+
+#add-campground form .form-group input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #F7F7F7;
+    color: var(--text-color);
+}
+
+#add-campground form .form-group input:focus,
+#add-campground form .form-group textarea:focus,
+#add-campground-comment form .form-group textarea:focus {
+    outline: none;
+}
+
+#add-campground form .form-group input::placeholder,
+#add-campground form .form-group textarea::placeholder,
+#add-campground-comment form .form-group textarea::placeholder {
+    color: var(--text-color);
+}
+
+#add-campground form .form-group textarea,
+#add-campground-comment form .form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+    border: none;
+    background-color: #F7F7F7;
+    color: var(--text-color);
+}
+
+#add-campground form button,
+#add-campground-comment form button {
+    display: block;
+    width: 100%;
+}
+
+#add-campground-comment {
+    height: auto;
+    width: 100%;
+    margin: 100px 0 70px;
+    overflow: hidden;
+}
+
+#footer {
+    height: 100px;
+    background-color: transparent;
+}
+
+@media(max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+    #navbar {
+        background-color: #fff;
+        z-index: 100;
+    }
+    #showcase .left-showcase {
+        margin-top: 100px;
+    }
+    #campground .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    #campground .campground-card .campground-img {
+        width: 100%;
+    }
+
+    #signin .signin-left {
+        margin-top: 100px;
+    }
+    #signin .signin-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 160px 100px;
+        background-color: #F9F6F1;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 90%;
+        position: relative;
+    }
+
+    #navbar {
+        background-color: #fff;
+        z-index: 50;
+    }
+    #navbar .navbar-left,
+    #navbar .navbar-hamburger {
+        z-index: 20;
+    }
+    #navbar .navbar-hamburger {
+        display: block;
+    }
+    #navbar #open-btn,
+    #navbar #close-btn {
+        width: 38px;
+        height: 38px;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+    #navbar #open-btn {
+        display: block;
+    }
+    #navbar #close-btn {
+        display: none;
+    }
+    #navbar.show #open-btn {
+        display: none;
+    }
+    #navbar.show #close-btn {
+        display: block;
+    }
+    #navbar .navbar-right {
+        display: none;
+    }
+    #navbar .navbar-dropdown {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+        padding-left: 40px;
+        padding-bottom: 10px;
+        display: block;
+        z-index: 10;
+        transition: .2s all linear;
+    }
+    #navbar.show .navbar-dropdown {
+        top: 80px;
+    }
+    #navbar .navbar-dropdown .container {
+        max-width: 90%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #showcase {
+        height: auto;
+        overflow: visible;
+    }
+    #showcase .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #showcase .left-showcase {
+        margin-top: 500px;
+        width: 100%;
+        padding-right: 50px;
+    }
+    #showcase .right-showcase {
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 375px;
+        background: url('assets/img/Hero\ Image\ \(Tablet\ and\ Mobile\).jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #campground {
+        margin: 50px 0;
+        height: auto;
+    }
+
+    #campground-details {
+        margin: 50px 0;
+    }
+    #campground-details .campground-grid {
+        grid-template-columns: 1fr;
+    }
+    #campground-details .campground-left {
+        order: 2;
+    }
+    #campground-details .campground-right {
+        order: 1;
+    }
+
+    #signin {
+        height: auto;
+        overflow: scroll;
+    }
+    #signin .container {
+        grid-template-columns: 1fr;
+    }
+    #signin .signin-left {
+        position: relative;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    #signin .signin-left .signin-title {
+        font-size: 2.5rem;
+    }
+    #signin .signin-left form {
+        margin: 20px 0;
+        padding: 0 180px 0 0;
+    }
+    #signin .signin-right {
+        position: initial;
+        width: 100%;
+        padding: 50px;
+    }
+}
+
+@media(max-width: 425px) {
+    #showcase .left-showcase .showcase-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    #showcase .left-showcase {
+        padding-right: 0;
+    }
+    #showcase .left-showcase .showcase-subtitle {
+        padding-right: 20px;
+    }
+    #showcase .left-showcase .showcase-list li p {
+        font-size: .9rem;
+        margin-left: 10px;
+        color: var(--text-color);
+    }
+
+    #search {
+        height: auto;
+    }
+    #search .container {
+        padding: 30px 40px 30px 30px;
+    }
+    #search .search-description {
+        width: 100%;
+    }
+    #search .search-box {
+        flex-direction: column;
+        width: 100%;
+    }
+    #search .search-input {
+        margin: 5px 0 10px;
+        width: 100%;
+    }
+    #search .search-input input {
+        width: 100%;
+    }
+    #search .search-btn {
+        width: 100%;
+    }
+    #search .search-link {
+        margin-top: 20px;
+    }
+
+    #campground .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #campground-details {
+        margin: 50px 0;
+    }
+    #campground-details .campground-left,
+    #campground-details .campground-item,
+    #campground-details .campground-comments {
+        padding: 25px;
+    }
+    
+    #signin .signin-left form {
+        padding: 0;
+    }
+    #signin .signin-right {
+        padding: 30px;
+    }
+    #signin .signin-right .user-testimonials {
+        font-size: 1.5rem;
+    }
+}

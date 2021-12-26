@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Yelp Camp - Add Campground Comment</title>
+</head>
+<body>
+    
+    <nav id="navbar">
+        <div class="container">
+            <div class="navbar-left">
+                <div class="navbar-logo">
+                    <img src="assets/img/Logo.svg" alt="logo">
+                </div>
+                <a href="/index.html" class="navbar-link">Home</a>
+            </div>
+            <div class="navbar-hamburger">
+                <button id="open-btn"><img src="assets/img/Hamburger Menu.svg" alt="Open"></button>
+                <button id="close-btn"><img src="assets/img/Close.svg" alt="Close"></button>
+            </div>
+            <div class="navbar-right">
+                <a href="#" class="user-btn">John Doe</a>
+                <a href="sign-in.html" class="logout-btn">Logout</a>
+            </div>
+        </div>
+        <div class="navbar-dropdown">
+            <div class="container">
+                <a href="#" class="user-btn">John Doe</a>
+                <a href="sign-in.html" class="logout-btn">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="add-campground-comment">
+        <div class="container">
+            <h2 class="add-campground-comment-title">
+                Add New Comment
+            </h2>
+            <form>
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+                <button class="add-campground-comment-btn btn" type="submit">Post Comment</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="navbar-logo">
+                <img src="assets/img/Logo.svg" alt="logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Yelp Camp - Mount Ulap Campground</title>
+</head>
+<body>
+    
+    <nav id="navbar">
+        <div class="container">
+            <div class="navbar-left">
+                <div class="navbar-logo">
+                    <img src="assets/img/Logo.svg" alt="logo">
+                </div>
+                <a href="/index.html" class="navbar-link">Home</a>
+            </div>
+            <div class="navbar-hamburger">
+                <button id="open-btn"><img src="assets/img/Hamburger Menu.svg" alt="Open"></button>
+                <button id="close-btn"><img src="assets/img/Close.svg" alt="Close"></button>
+            </div>
+            <div class="navbar-right">
+                <a href="sign-in.html" class="navbar-btn">Login</a>
+                <a href="sign-up.html" class="navbar-btn btn">Create an Account</a>
+            </div>
+        </div>
+        <div class="navbar-dropdown">
+            <div class="container">
+                <a href="sign-in.html" class="navbar-btn">Login</a>
+                <a href="sign-up.html" class="navbar-btn btn">Create an Account</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="campground-details">
+        <div class="container">
+            <div class="campground-grid">
+                <div class="campground-left">
+                    <img src="assets/img/Map.png" alt="" class="campground-map">
+                </div>
+                <div class="campground-right">
+                    <div class="campground-item">
+                        <img src="assets/img/Latik Riverside.jpg" alt="Mount Ulap" class="campground-item-img">
+                        <div>
+                            <h2 class="campground-item-title">Mount Ulap</h2>
+                            <p class="campground-item-price">$104.99/night</p>
+                        </div>
+                        <p class="campground-item-description">
+                            Mount Ulap is a 7.7 kilometer moderately trafficked point-to-point trail located near Tuba, Benguet, Phillippines 
+                            that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking.
+                        </p>
+                        <p class="campground-item-author">
+                            Submitted by Andrew Mike
+                        </p>
+                    </div>
+                    <div class="campground-comments">
+                        <div class="campground-comment">
+                            <div>
+                                <p class="comment-user">Adam Jones</p>
+                                <p class="comment-date">13h ago</p>
+                            </div>
+                            <p class="comment-content">
+                                Honestly one of the best experiences ever, took us a while to figure out how to get there but it was amazing!
+                            </p>
+                        </div>
+                        <div class="campground-comment">
+                            <div>
+                                <p class="comment-user">Isaac Dylan</p>
+                                <p class="comment-date">1 day ago</p>
+                            </div>
+                            <p class="comment-content">
+                                Traveling changes you as a person, you gain more perspective, this is the perfect spot to do that.
+                            </p>
+                        </div>
+                        <div class="campground-comment">
+                            <div>
+                                <p class="comment-user">Hudson Luca</p>
+                                <p class="comment-date">3 days ago</p>
+                            </div>
+                            <p class="comment-content">
+                                Definitely recommend going there, not too far and not a lot of people to ruin the experience.
+                            </p>
+                        </div>
+                        <a href="add-campground-comment.html" class="comment-btn btn">
+                            <img src="assets/img/Chat Bubble.svg" alt="">
+                            <p>Leave a Review</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="navbar-logo">
+                <img src="assets/img/Logo.svg" alt="logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
